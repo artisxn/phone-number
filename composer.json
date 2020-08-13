@@ -1,0 +1,39 @@
+{
+    "name": "codicastudio/phone-number",
+    "description": "A noobs worthless garbage, just learning.",
+    "keywords": [
+        "worthless garabage by a noob."
+    ],
+    "homepage": "https://github.com/codicastudio/phone-number",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael J Brown",
+            "email": "codicastudiodev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "codicastudio\\NovaPhoneField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "codicastudio\\NovaPhoneField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
